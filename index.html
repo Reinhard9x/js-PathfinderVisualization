@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PathfindingAlgos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header><h1>Pathfinder Visualization</h1></header>
+    <div id="overlay"></div>
+    <div class="container">
+        <div class="dropdown">
+            <button class="dropbtn">Algorithms ></button>
+            <div class="dropdown-content">
+                <a href="#" id="dijkstra">Dijkstra's</a>
+                <a href="#" id="A*">A*</a>
+                <a href="#" id="swarm">Bidirectional</a>
+              </div>
+        </div>
+        <div class="dropdown">
+            <button class="dropbtn">Walls ></button>
+            <div class="dropdown-content">
+                <a id="randomwalls" href="#">Random Walls</a>
+                <a id="maze" href="#">Generate Maze</a>
+              </div>
+        </div>
+    </div>
+        <button class="mybutton" id="clearboard">Clear Board</button>
+        <button class="mybutton" id="start">Start</button>
+        <br><br><br>
+        <p id="paragraph">Pick an alogorithm and start!</p>
+    <canvas id="mycanvas"></canvas>
+    <footer>
+        <div id="infodiv">
+            <div id="startinfo"></div>
+            Start.
+        </div>
+        <div id="infodiv">
+            <div id="endinfo"></div>
+            End.
+        </div>
+        <div id="moveinfo">To move one of the points click on it then click again on a new square!</div>
+    </footer>
+    <script src="index.js"></script>
+</body>
+</html>
